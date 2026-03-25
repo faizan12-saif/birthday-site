@@ -1,17 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Happy Birthday Afira</title>
+<meta charset="UTF-8">
+<title>Happy Birthday Afira ❤️</title>
+
 <style>
-body{
-background:#ffb6c1;
-text-align:center;
-font-family:Arial;
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: white;
 }
-img{
-width:300px;
-margin:10px;
-border-radius:10px;
+
+h1 {
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.gallery {
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 250px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
 }
 </style>
 </head>
@@ -19,15 +44,32 @@ border-radius:10px;
 <body>
 
 <h1>🎂 Happy Birthday Afira 🎂</h1>
+
 <p>Something magical is about to unfold ❤️</p>
 
-<img src="photo1.jpg">
-<img src="photo2.jpg">
-<img src="photo3.jpg">
+<p>
+You are the most special person in my life 💖 <br>
+Your smile makes everything brighter ✨ <br>
+Wishing you endless happiness today and always ❤️
+</p>
 
-<audio autoplay loop>
-<source src="music.mp3" type="audio/mpeg">
+<div class="gallery">
+    <!-- IMPORTANT: Make sure file names match exactly -->
+    <img src="photos/photo1.jpg" alt="Memory 1">
+    <img src="photos/photo2.jpg" alt="Memory 2">
+    <img src="photos/photo3.jpg" alt="Memory 3">
+</div>
+
+<!-- Background Music -->
+<audio autoplay loop controls>
+    <source src="music/music.mp3" type="audio/mpeg">
 </audio>
+
+<script>
+window.onload = function() {
+    alert("🎉 Surprise! Happy Birthday ❤️ 🎉");
+};
+</script>
 
 </body>
 </html>
